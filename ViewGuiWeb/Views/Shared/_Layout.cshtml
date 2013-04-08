@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/bottom.css" rel="stylesheet" />
+    <link href="~/Content/easyslider.css" rel="stylesheet" />
+    <link href="~/Content/base.css" rel="stylesheet" />
+</head>
+    <body>
+        <!-- Inicio Do Layout -->
+        <div class="layout">
+            <!-- Inicio Do Corpo -->
+            <section id="corpo">
+                <!-- Inicio do Cabeçalho -->
+                <header id="topo">
+                    <h1>@Html.ActionLink("Rondonia Agitos","Index","Home")</h1>
+
+                    <a href="#" class="banner-728x90">
+                        <img src="~/Content/img/banner-728x90.jpg" title="Publicidade" alt="Publicidade"></a>
+
+                    <nav id="menu-sup">
+                        <ul>
+                            <li>
+                                @Html.ActionLink("Principal", "Index", "Home")
+                            </li>
+                            <li>
+                                @Html.ActionLink("Eventos", "Eventos", "Home")
+                            </li>
+                            <li>
+                                @Html.ActionLink("As Mina Pira", "AsMinasPira", "Home")
+                            </li>
+                            <li>
+                                @Html.ActionLink("Contato", "Contato", "Home")
+                            </li>
+                            <li>
+                                @Html.ActionLink("Quem Somos", "QuemSomos", "Home")
+                            </li>
+                        </ul>
+                        <form action="#" class="busca">
+                            <fieldset>
+                                <ol>
+                                    <li>
+                                        <input type="text" id="busca" name="busca">
+                                        <button type="submit"></button>
+                                    </li>
+                                </ol>
+                            </fieldset>
+                        </form>
+                    </nav>
+                </header>
+                <!-- Fim do Cabeçalho -->
+                @RenderBody()
+                <!-- Inicio Do Rodape -->
+                <footer id="rodape">
+                    <ul>
+                        <li>
+                            @Html.ActionLink("Principal", "Index", "Home")
+                        </li>
+                        <li>
+                            @Html.ActionLink("Eventos", "Eventos", "Home")
+                        </li>
+                        <li>
+                            @Html.ActionLink("As Mina Pira", "AsMinasPira", "Home")
+                        </li>
+                        <li>
+                            @Html.ActionLink("Contato", "Contato", "Home")
+                        </li>
+                        <li>
+                            @Html.ActionLink("Quem Somos", "QuemSomos", "Home")
+                        </li>
+                    </ul>
+                    <form action="#" class="busca">
+                        <fieldset>
+                            <ol>
+                                <li>
+                                    <input type="text" id="r-busca" name="busca">
+                                    <button type="submit"></button>
+                                </li>
+                            </ol>
+                        </fieldset>
+                    </form>
+                    <div id="copy">
+                        <h4>
+                            <a href="#" title="direitos">Copyright 2012 - RondôniAgitos Todos os direitos reservados
+                            </a>
+                        </h4>
+                        <ul>
+                            <li>
+                                <a href="#" title="Rede Sociais">
+                                    <img src="~/Content/img/rede-1.jpg" title="Facebook" alt="Facebook" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Rede Sociais">
+                                    <img src="~/Content/img/rede-2.jpg" title="Orkut" alt="Orkut" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Rede Sociais">
+                                    <img src="~/Content/img/rede-3.jpg" title="Tuwiter" alt="Tuwiter" />
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" title="WebMidia" id="webmidia">
+                            <img src="~/Content/img/webmidia.png" title="WebMidia" alt="WebMidia" />
+                        </a>
+                    </div>
+                </footer>
+                <!-- Fim Do Rodape -->
+            </section>
+            <!-- Fim Do Corpo -->
+        </div>
+        <!-- Fim Do Layout -->
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+        <script src="~/Scripts/master.js"></script>
+    </body>
+</html>
