@@ -1,0 +1,692 @@
+﻿body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/* Elementos Agrupado */
+#corpo, #topo, #topo h1 a, #topo .banner-728x90, #menu-sup, #menu-sup ul, #menu-sup ul li, #menu-sup ul li a, .busca, .busca fieldset, .busca fieldset ol,
+.busca fieldset ol li, .busca fieldset ol li #busca, #cobertura, #quemsomos, #contato, #eventos, #asminas, .cab-destaque, .cab-destaque img, .cab-destaque h2, .cab-destaque h2 a,
+#cobertura ul, #cobertura ul li, .cobertura, .cobertura img, .cobertura p, #bloco-publicidade, #publicidade-banner, .banner-468x60,
+#variados, #bloco-agenda, #bloco-agenda ul, #bloco-agenda ul li, #bloco-agenda ul li .eventos-agenda, #bloco-agenda ul li .eventos-agenda img,
+#bloco-agenda ul li .eventos-agenda .desc-evento, #bloco-agenda ul li .eventos-agenda .desc-evento img, #bloco-agenda ul li .eventos-agenda .desc-evento p,
+#bloco-agenda ul li .eventos-agenda .desc-evento h2, #bloco-video, #bloco-video iframe, #bloco-face, #bloco-mural, #bloco-enquete-mural, #bloco-enquete, #bloco-mural,
+#bloco-enquete #enquete, #bloco-enquete #enquete fieldset, #bloco-enquete #enquete fieldset h3, #bloco-enquete #enquete fieldset ol, #bloco-mural ul,
+#bloco-mural ul li, #bloco-mural ul li h3, #bloco-mural ul li span, #bloco-mural ul li span p, #bloco-mural ul li span a, #rodape, #rodape ul, #rodape ul li, #rodape ul li a,
+#rodape form, #rodape form fieldset, #rodape form fieldset ol, #rodape form fieldset ol li, #rodape #copy, #rodape #copy h4, #rodape #copy ul, #rodape #copy ul li, #rodape #copy ul a,
+#rodape #copy ul li a img, #rodape #copy #webmidia, #rodape #copy #webmidia img, .radio, #quemsomos, #quemsomos-cont, #form-contato, #contato-email, #contato-email, #contato-email fieldset,
+
+#contato-email fieldset ol li button {
+    display: block;
+    float: left;
+}
+
+.layout {
+    display: block;
+    width: 1003px;
+    margin: auto;
+}
+
+#corpo {
+    width: 983px;
+    border-width: 10px;
+    border-color: #F1A432;
+    border-style: solid;
+    border-radius: 10px;
+    background: #fff;
+}
+
+/* Inicio Cabecalho */
+#topo {
+    width: 983px;
+    height: 140px;
+    background: #fff;
+    position: absolute;
+}
+
+    #topo h1 a {
+        width: 306px;
+        height: 71px;
+        margin-top: 10px;
+        background: url(img/logo.png) no-repeat scroll left top;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+
+    #topo .banner-728x90 {
+        width: 650px;
+        height: 80px;
+    }
+
+        #topo .banner-728x90 img {
+            width: 650px;
+            height: 80px;
+            margin-left: 27px;
+        }
+
+#menu-sup {
+    width: 983px;
+    height: 40px;
+    background: #330099;
+    position: absolute;
+    top: 100px;
+}
+
+    #menu-sup.fixed {
+        z-index: 5;
+        position: fixed;
+        top: 0;
+        opacity: 0.8;
+        background: #F1A432;
+    }
+
+        #menu-sup.fixed:hover {
+            opacity: 0.9;
+            background: #5227a9;
+        }
+
+        #menu-sup.fixed ul li a:hover {
+            color: #F1A432;
+        }
+
+    #menu-sup ul {
+        width: 663px;
+        height: 40px;
+    }
+
+        #menu-sup ul li:first-child {
+            margin-left: 20px;
+        }
+
+        #menu-sup ul li {
+            width: 125px;
+            height: 40px;
+            margin: 10px 0;
+        }
+
+            #menu-sup ul li a, #menu-sup ul li a:visited {
+                font: bold 16px Arial, Helvetica, sans-serif;
+                color: #fff;
+            }
+
+                #menu-sup ul li a:hover {
+                    color: #F1A432;
+                }
+
+.busca {
+    width: 300px;
+    height: 40px;
+    margin: 8px 10px 8px 1px;
+}
+
+    .busca fieldset {
+        border: 0;
+    }
+
+        .busca fieldset ol {
+            width: 290px;
+            height: 40px;
+            margin-left: 10px;
+        }
+
+            .busca fieldset ol li {
+                width: 290px;
+                height: 27px;
+            }
+
+                .busca fieldset ol li #busca, .busca fieldset ol li #r-busca {
+                    width: 252px;
+                    height: 27px;
+                    border: 0;
+                    border-radius: 5px;
+                    margin-right: 10px;
+                    background: url(img/bg-busca.jpg) no-repeat scroll left top;
+                }
+
+                    .busca fieldset ol li #busca:focus, .busca fieldset ol li #r-busca:focus {
+                        background: #fff;
+                    }
+
+                .busca fieldset ol li button {
+                    width: 22px;
+                    height: 23px;
+                    border: 0;
+                    background: url(img/lupa.png) no-repeat scroll left top;
+                    cursor: pointer;
+                }
+/* Fim Cabecalho */
+/* Inicio Cobertura */
+#cobertura {
+    width: 983px;
+    height: 580px;
+    margin-top: 140px;
+}
+
+    #cobertura .cab-destaque {
+        width: 500px;
+    }
+
+.radio {
+    margin: 10px 0 0 100px;
+}
+
+.cab-destaque img {
+    width: 34px;
+    height: 27px;
+    margin: 10px;
+}
+
+.cab-destaque h2 a, .cab-destaque h2 a:visited {
+    font: normal 20px Arial, Helvetica, sans-serif;
+    color: #330099;
+    margin: 10px;
+}
+
+#cobertura ul {
+    width: 945px;
+    height: 480px;
+    margin-left: 20px;
+}
+
+    #cobertura ul li {
+        width: 300px;
+        height: 230px;
+        margin: 7px 7px 40px;
+    }
+
+.cobertura, .cobertura:visited {
+    width: 300px;
+    height: 230px;
+    background: #fff;
+}
+
+    .cobertura:hover {
+        box-shadow: 3px 3px 3px #f1a432;
+        border-radius: 5px;
+    }
+
+    .cobertura p {
+        margin-top: 5px;
+        font: bold 14px Arial, Helvetica, sans-serif;
+        color: #309;
+    }
+
+    .cobertura:hover p {
+        color: #f1a432;
+    }
+
+    .cobertura img {
+        width: 290px;
+        height: 220px;
+        border-radius: 20px;
+        margin: 5px;
+    }
+/* Fim Cobertura */
+/* Inicio Bloco Publicidade */
+#bloco-publicidade {
+    width: 983px;
+    height: 70px;
+    margin-top: 30px;
+}
+
+#publicidade-banner {
+    width: 983px;
+    height: 70px;
+}
+
+.banner-468x60:first-child {
+    margin-left: 15px;
+}
+
+.banner-468x60 {
+    width: 468px;
+    height: 60px;
+    margin: 5px 5px;
+}
+/* Fim Bloco Publicidade */
+/* Inicio Bloco Variedade */
+/* Inicio Bloco Agenda */
+#variados {
+    width: 983px;
+    height: 440px;
+    margin-top: 10px;
+}
+
+#bloco-agenda {
+    width: 360px;
+    height: 440px;
+}
+
+    #bloco-agenda ul {
+        width: 340px;
+        height: 400px;
+        margin: 10px;
+        border: 5px solid;
+        border-color: #330099;
+        border-radius: 20px;
+    }
+
+        #bloco-agenda ul li {
+            width: 300px;
+            height: 80px;
+            margin: 10px 10px 10px 20px;
+        }
+
+            #bloco-agenda ul li .eventos-agenda {
+                width: 300px;
+                height: 80px;
+            }
+
+                #bloco-agenda ul li .eventos-agenda img {
+                    width: 100px;
+                    height: 80px;
+                    border-radius: 8px;
+                }
+
+                    #bloco-agenda ul li .eventos-agenda img:hover {
+                        box-shadow: 3px 3px 3px #f1a432;
+                    }
+
+                #bloco-agenda ul li .eventos-agenda .desc-evento {
+                    width: 190px;
+                    height: 75px;
+                }
+
+                #bloco-agenda ul li .eventos-agenda .desc-evento {
+                    margin-left: 10px;
+                }
+
+                    #bloco-agenda ul li .eventos-agenda .desc-evento img {
+                        width: 20px;
+                        height: 16px;
+                    }
+
+                    #bloco-agenda ul li .eventos-agenda .desc-evento p {
+                        font: italic 10px Arial, Helvetica, sans-serif;
+                        color: #330099;
+                        margin: 5px 0 0 10px;
+                    }
+
+                    #bloco-agenda ul li .eventos-agenda .desc-evento h2 {
+                        font: normal 14 px Arial, Helvetica, sans-serif;
+                        color: #330099;
+                        margin: 5px 0 0 10px;
+                    }
+/* Fim Bloco Agenda */
+/* Inicio Bloco Video */
+#bloco-video {
+    width: 330px;
+    height: 315px;
+    margin-bottom: 40px;
+}
+
+    #bloco-video video {
+        width: 320px;
+        height: 260px;
+        margin-left: 15px;
+    }
+/* Fim Bloco Video */
+/* Inicio Bloco Facebook */
+#bloco-face {
+    width: 180px;
+    height: 315px;
+    margin-left: 20px;
+}
+/* Fim Bloco Facebool */
+.banner1-468x60 {
+    width: 468px;
+    height: 60px;
+    margin: 5px 50px;
+}
+/* Fim Bloco Facebook */
+/* Fim Bloco Variedade */
+/* Fim bloco Enquete eMural de Recados */
+#bloco-enquete-mural {
+    width: 983px;
+    height: 380px;
+    margin-top: 40px;
+}
+/* Inicio bloco Mural de Recados */
+#bloco-enquete {
+    width: 360px;
+    height: 350px;
+}
+
+    #bloco-enquete #enquete {
+        width: 335px;
+        height: 280px;
+        margin: 5px 10px 10px 10px;
+    }
+
+        #bloco-enquete #enquete fieldset {
+            width: 335px;
+            height: 330px;
+            border-radius: 20px;
+            border: 5px solid;
+            border-color: #330099;
+        }
+
+            #bloco-enquete #enquete fieldset h3 {
+                width: 280px;
+                height: 50px;
+                font: italic 20px Arial, Helvetica, sans-serif;
+                color: #F1A432;
+                margin: 30px 5px 0 40px;
+            }
+
+            #bloco-enquete #enquete fieldset ol {
+                width: 245px;
+                height: 150px;
+                margin: 5px 45px;
+            }
+
+                #bloco-enquete #enquete fieldset ol li {
+                    width: 245px;
+                    height: 30px;
+                    margin-top: 10px;
+                }
+
+                    #bloco-enquete #enquete fieldset ol li label {
+                        margin-left: 10px;
+                        font: italic 20px Arial, Helvetica, sans-serif;
+                        color: #f1a432;
+                    }
+
+                    #bloco-enquete #enquete fieldset ol li button {
+                        width: 60px;
+                        height: 22px;
+                        margin: 5px 20px;
+                        border: 0;
+                        background: url("img/bot-enquete.png") no-repeat scroll top left;
+                    }
+/* Fim bloco Mural de Recados */
+/* Inicio Bloco Mural */
+#bloco-mural {
+    width: 590px;
+    height: 350px;
+    margin-left: 30px;
+}
+
+    #bloco-mural ul {
+        width: 570px;
+        height: 350px;
+        margin: 0 10px;
+    }
+
+        #bloco-mural ul li {
+            width: 570px;
+            margin: 3px;
+        }
+
+            #bloco-mural ul li h3 {
+                font: normal 14px Arial, Helvetica, sans-serif;
+                color: #5227A9;
+            }
+
+            #bloco-mural ul li span {
+                width: 200px;
+                height: 50px;
+                margin: 10px 20px;
+            }
+
+            #bloco-mural ul li div p {
+                color: #5227a9;
+            }
+/* Fim bloco Enquete e Mural de Recados */
+/* Inicio Rodape */
+#rodape {
+    width: 983px;
+    height: 100px;
+    margin-top: 20px;
+    background: #5227a9;
+    margin-top: 50px;
+}
+
+    #rodape ul {
+        width: 280px;
+        height: 60px;
+        margin: 20px;
+    }
+
+        #rodape ul li {
+            width: 93px;
+            height: 30px;
+        }
+
+            #rodape ul li a, #rodape ul li a:visited {
+                font: normal 14px Arial, Helvetica, sans-serif;
+                color: #fff;
+            }
+
+                #rodape ul li a:hover {
+                    color: #f1a432;
+                }
+
+    #rodape .busca {
+        margin: 35px 0;
+    }
+
+    #rodape #copy {
+        width: 300px;
+        height: 100px;
+    }
+
+        #rodape #copy h4 {
+            margin-top: 10px;
+        }
+
+            #rodape #copy h4 a {
+                font: italic 10px Arial, Helvetica, sans-serif;
+                color: #fff;
+            }
+
+        #rodape #copy ul {
+            width: 105px;
+            height: 20px;
+        }
+
+            #rodape #copy ul li {
+                width: 30px;
+                height: 20px;
+                margin: 0 3px 0 0;
+            }
+
+        #rodape #copy #webmidia {
+            width: 145px;
+            height: 37px;
+            margin-top: 20px;
+        }
+
+            #rodape #copy #webmidia img {
+                width: 143px;
+                height: 24px;
+            }
+/* Fim Rodape */
+/*Inicio Css Pagina Quem Somos*/
+#quemsomos {
+    width: 983px;
+    margin-top: 140px;
+}
+
+#quemsomos-cont {
+    width: 800px;
+    margin: 30px 0 0 50px;
+}
+
+    #quemsomos-cont h3 p {
+        font: normal 16px Arial, Helvetica, sans-serif;
+        color: #5227A9;
+    }
+/*Fim Css Pagina Quem Somos*/
+/*Inicio Css Pagina Contato*/
+#contato {
+    width: 983px;
+    margin-top: 140px;
+}
+
+#form-contato {
+    width: 390px;
+    margin: 50px 0 0 150px;
+    border-radius: 20px;
+    border-style: solid;
+    background: #F0F0F0;
+}
+
+#contato #form-contato h3 {
+    font: normal 15px Arial, Helvetica, sans-serif;
+    color: #000;
+    margin: 10px 0 10px 20px;
+}
+
+#contato-email {
+    width: 390px;
+}
+
+    #contato-email fieldset {
+        border: 0;
+        width: 390px;
+    }
+
+        #contato-email fieldset ol {
+            width: 390px;
+        }
+
+            #contato-email fieldset ol li {
+                width: 340px;
+            }
+
+                #contato-email fieldset ol li label {
+                    font: normal 14px Arial, Helvetica, sans-serif;
+                    color: #000;
+                    margin: 10px 0 0 20px;
+                }
+
+#nome, #email, #telefone, #cidade, #assunto {
+    width: 340px;
+    height: 30px;
+    margin: 10px 0 5px 20px;
+    border: 0;
+    border-radius: 10px;
+}
+
+    #nome:focus, #email:focus, #telefone:focus, #cidade:focus, #assunto:focus, #mensagem:focus {
+        background: #FFFF00;
+    }
+
+#mensagem {
+    width: 340px;
+    height: 100px;
+    margin: 10px 0 5px 20px;
+}
+
+#bt-enviar {
+    width: 61px;
+    height: 44px;
+    background: url("img/bt-enviar.png") no-repeat scroll top left;
+    border: 0;
+    margin: 5px 10px 10px 20px;
+}
+
+#bt-limpar {
+    width: 61px;
+    height: 44px;
+    background: url("img/bt-limpar.png") no-repeat scroll top left;
+    border: 0;
+    margin: 5px 0 10px 10px;
+}
+/*Fim Css Pagina Contato*/
+
+#eventos {
+    float: left;
+    width: 983px;
+    margin-top: 140px;
+}
+
+.pikachoose {
+    display: block;
+    float: left;
+    margin-top: 50px;
+}
+
+.banner-728x901 {
+    display: block;
+    float: left;
+    width: 650px;
+    height: 80px;
+    margin: 50px 0 0 155px;
+}
+
+#asminaspira {
+    margin-top: 140px;
+}

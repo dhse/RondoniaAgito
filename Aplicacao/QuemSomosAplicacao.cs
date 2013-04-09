@@ -55,11 +55,11 @@ namespace Aplicacao
             while (reader.Read())
             {
                 var tempObjeto = new QuemSomos()
-                                     {
-                                         QuemSomosId = int.Parse(reader["QuemSomosId"].ToString()),
-                                         QuemSomosDescricao = reader["QuemSomosDescricao"].ToString(),
-                                         
-                                     };
+                {
+                    QuemSomosId = int.Parse(reader["QuemSomosId"].ToString()),
+                    QuemSomosDescricao = reader["QuemSomosDescricao"].ToString(),
+
+                };
                 quemSomos.Add(tempObjeto);
             }
             return quemSomos;

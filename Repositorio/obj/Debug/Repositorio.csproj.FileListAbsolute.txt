@@ -1,0 +1,5 @@
+D:\repositorio\RondoniaAgito\Repositorio\bin\Debug\Repositorio.dll
+D:\repositorio\RondoniaAgito\Repositorio\bin\Debug\Repositorio.pdb
+D:\repositorio\RondoniaAgito\Repositorio\obj\Debug\Repositorio.csprojResolveAssemblyReference.cache
+D:\repositorio\RondoniaAgito\Repositorio\obj\Debug\Repositorio.dll
+D:\repositorio\RondoniaAgito\Repositorio\obj\Debug\Repositorio.pdb

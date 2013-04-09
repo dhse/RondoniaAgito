@@ -1,0 +1,9 @@
+D:\repositorio\RondoniaAgito\Aplicacao\bin\Debug\Aplicacao.dll
+D:\repositorio\RondoniaAgito\Aplicacao\bin\Debug\Aplicacao.pdb
+D:\repositorio\RondoniaAgito\Aplicacao\bin\Debug\Dominio.dll
+D:\repositorio\RondoniaAgito\Aplicacao\bin\Debug\Repositorio.dll
+D:\repositorio\RondoniaAgito\Aplicacao\bin\Debug\Dominio.pdb
+D:\repositorio\RondoniaAgito\Aplicacao\bin\Debug\Repositorio.pdb
+D:\repositorio\RondoniaAgito\Aplicacao\obj\Debug\Aplicacao.csprojResolveAssemblyReference.cache
+D:\repositorio\RondoniaAgito\Aplicacao\obj\Debug\Aplicacao.dll
+D:\repositorio\RondoniaAgito\Aplicacao\obj\Debug\Aplicacao.pdb
