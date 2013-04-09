@@ -1,31 +1,20 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="EDBC3A00-0DF8-489E-9D2D-F1111CEC6FB1/f:Admin.cs" caret="602" fromTop="18" />
-    <File id="70F27605-3852-4CBF-A1A2-80F31AE45138/f:Contexto.cs" caret="1067" fromTop="18" />
-    <File id="EDBC3A00-0DF8-489E-9D2D-F1111CEC6FB1/f:QuemSomos.cs" caret="287" fromTop="12" />
-    <File id="BD5219C4-A22A-423F-B4FC-D9D4149C9ADE/f:QuemSomosAplicacao.cs" caret="355" fromTop="9" />
-    <File id="BD5219C4-A22A-423F-B4FC-D9D4149C9ADE/f:AdminAplicacao.cs" caret="967" fromTop="11" />
-    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Views/d:Shared/f:_Layout.cshtml" caret="4737" fromTop="6" />
-    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Content/f:Site.css" caret="15576" fromTop="13" />
-    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Views/d:Home/f:Index.cshtml" caret="9447" fromTop="74" />
-    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:App_Start/f:RouteConfig.cs" caret="509" fromTop="18" />
-    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/f:PainelAreaRegistration.cs" caret="521" fromTop="19" />
-    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Views/d:Home/f:Index.cshtml" caret="0" fromTop="0" />
-    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Controllers/f:HomeController.cs" caret="323" fromTop="16" />
-    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Controllers/f:HomeController.cs" caret="266" fromTop="10" />
+    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Views/d:Home/f:Eventos.cshtml" caret="0" fromTop="0" />
+    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Views/d:Home/f:AsMinasPira.cshtml" caret="0" fromTop="0" />
+    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Views/d:Home/f:Contato.cshtml" caret="0" fromTop="0" />
+    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Views/d:Home/f:QuemSomos.cshtml" caret="0" fromTop="0" />
+    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Controllers/f:HomeController.cs" caret="676" fromTop="14" />
+    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Content/f:bootstrap.min.css" caret="0" fromTop="0" />
+    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Views/d:Home/f:Logado.cshtml" caret="0" fromTop="0" />
+    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Views/d:Home/f:Index.cshtml" caret="97" fromTop="4" />
+    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Views/d:Shared/f:_Layout.cshtml" caret="0" fromTop="0" />
+    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Controllers/f:HomeController.cs" caret="1780" fromTop="14" />
+    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Views/d:Shared/f:_Painel.cshtml" caret="692" fromTop="6" />
   </RecentFiles>
   <RecentEdits>
-    <File id="70F27605-3852-4CBF-A1A2-80F31AE45138/f:Contexto.cs" caret="325" fromTop="13" />
-    <File id="EDBC3A00-0DF8-489E-9D2D-F1111CEC6FB1/f:Admin.cs" caret="277" fromTop="12" />
-    <File id="EDBC3A00-0DF8-489E-9D2D-F1111CEC6FB1/f:QuemSomos.cs" caret="287" fromTop="12" />
-    <File id="BD5219C4-A22A-423F-B4FC-D9D4149C9ADE/f:AdminAplicacao.cs" caret="2672" fromTop="40" />
-    <File id="BD5219C4-A22A-423F-B4FC-D9D4149C9ADE/f:QuemSomosAplicacao.cs" caret="2064" fromTop="57" />
-    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Controllers/f:HomeController.cs" caret="702" fromTop="24" />
-    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Views/d:Home/f:Index.cshtml" caret="9447" fromTop="23" />
-    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Content/f:Site.css" caret="15739" fromTop="25" />
-    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Views/d:Shared/f:_Layout.cshtml" caret="4737" fromTop="6" />
-    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:App_Start/f:RouteConfig.cs" caret="450" fromTop="17" />
-    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/f:PainelAreaRegistration.cs" caret="521" fromTop="19" />
-    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Controllers/f:HomeController.cs" caret="1679" fromTop="11" />
+    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Views/d:Home/f:Index.cshtml" caret="97" fromTop="4" />
+    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Controllers/f:HomeController.cs" caret="1780" fromTop="14" />
+    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Views/d:Shared/f:_Painel.cshtml" caret="692" fromTop="6" />
   </RecentEdits>
 </RecentFiles>
