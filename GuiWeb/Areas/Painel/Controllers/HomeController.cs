@@ -36,7 +36,7 @@ namespace GuiWeb.Areas.Painel.Controllers
                         return Redirect(returnUrl);
                     }
                     //Redirecionando o usuario pra tela inicial do sistema
-                    return RedirectToAction("Index", "Home", new { Area = "Painel" });
+                    return RedirectToAction("Logado", "Home", new { Area = "Painel" });
                 }
                 ViewBag.Menssage = "Usuário ou senha não confere";
             }
@@ -45,14 +45,45 @@ namespace GuiWeb.Areas.Painel.Controllers
             return View();
         }
 
+        [Authorize]
         public ActionResult Logout()
         {
             FormsAuthentication.SignOut();
             return RedirectToAction("Index", "Home", new { Area = "" });
         }
 
-        
+        [Authorize]
         public  ActionResult Logado()
+        {
+            return View();
+        }
+
+        [Authorize]
+        public ActionResult Admin()
+        {
+            return View();
+        }
+
+        [Authorize]
+        public ActionResult Eventos()
+        {
+            return View();
+        }
+
+        [Authorize]
+        public ActionResult AsMinasPira()
+        {
+            return View();
+        }
+
+        [Authorize]
+        public ActionResult Contato()
+        {
+            return View();
+        }
+
+        [Authorize]
+        public ActionResult QuemSomos()
         {
             return View();
         }

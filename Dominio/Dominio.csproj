@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin.cs" />
+    <Compile Include="Contato.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuemSomos.cs" />
   </ItemGroup>

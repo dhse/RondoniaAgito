@@ -14,29 +14,26 @@
             <div class="container">
                 <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 </button>
-                <a class="brand" href="./index.html">Painel</a>
+                @Html.ActionLink("Painel", "Logado", "Home", new { @class = "brand" })
                 <div class="nav-collapse collapse">
                     <ul class="nav">
                         <li class="active">
-                            <a href="./index.html">Home</a>
+                            @Html.ActionLink("Admin", "Admin", "Home")
                         </li>
                         <li class="">
-                            <a href="./getting-started.html">Get started</a>
+                            @Html.ActionLink("Eventos", "Eventos", "Home")
                         </li>
                         <li class="">
-                            <a href="./scaffolding.html">Scaffolding</a>
+                            @Html.ActionLink("As Minas Pira", "AsMinasPira", "Home")
                         </li>
                         <li class="">
-                            <a href="./base-css.html">Base CSS</a>
+                            @Html.ActionLink("Contato", "Contato", "Home")
                         </li>
                         <li class="">
-                            <a href="./components.html">Components</a>
+                            @Html.ActionLink("Quem Somos", "QuemSomos", "Home")
                         </li>
                         <li class="">
-                            <a href="./javascript.html">JavaScript</a>
-                        </li>
-                        <li class="">
-                            <a href="./customize.html">Customize</a>
+                            @Html.ActionLink("Sair", "Logout", "Home")
                         </li>
                     </ul>
                 </div>

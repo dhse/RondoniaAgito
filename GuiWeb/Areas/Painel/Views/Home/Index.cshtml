@@ -1,4 +1,62 @@
-﻿@{
-    ViewBag.Title = "Index";
-    Layout = "~/Areas/Painel/Views/Shared/_Painel.cshtml";
+﻿@model Dominio.Admin
+@{
+    Layout = null;
 }
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <script src="~/Scripts/modernizr-2.5.3.js"></script>
+    <script src="~/Scripts/jquery-1.7.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row-fluid" style="margin-top: 150px">
+            <div class="span12">
+                <div class="span4">
+                </div>
+                <div class="span4">
+                    @using (Html.BeginForm(new {@class="form-horizontal"}))
+                    {
+                        @Html.ValidationSummary(true)
+                        <div class="field-validation-error" style="width: 100%">@ViewBag.Menssage</div>
+                        <div class="control-label">
+                            @Html.LabelFor(model => model.AdminLogin)
+                        </div>
+                        <div class="controls">
+                            @Html.EditorFor(model => model.AdminLogin, new {style = "" ,placeholder="Nome de Usuario"})
+                        </div>
+                        <div style="width: 100%">
+                            @Html.ValidationMessageFor(model => model.AdminLogin)
+                        </div>
+
+                        <div class="control-label">
+                            @Html.LabelFor(model => model.AdminSenha)
+                        </div>
+                        <div class="controls">
+                            @Html.PasswordFor(model => model.AdminSenha, new {style = "" ,placeholder="Senha"})
+                        </div>
+                        <div style="width: 100%">
+                            @Html.ValidationMessageFor(model => model.AdminSenha)
+                        </div>
+                        <div class="control-group">
+                            <input type="submit" class="btn btn-primary btn-inverse" value="Acessar" />
+                            <input type="reset" class="btn btn-primary btn-inverse" value="Limpar" />
+                        </div>
+                    }
+                </div>
+
+                <div class="span4">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

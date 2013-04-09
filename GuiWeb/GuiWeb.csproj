@@ -222,6 +222,11 @@
     <Content Include="Areas\Painel\Views\Web.config" />
     <Content Include="Areas\Painel\Views\Shared\_Painel.cshtml" />
     <Content Include="Areas\Painel\Views\Home\Logado.cshtml" />
+    <Content Include="Areas\Painel\Views\Home\Admin.cshtml" />
+    <Content Include="Areas\Painel\Views\Home\Eventos.cshtml" />
+    <Content Include="Areas\Painel\Views\Home\AsMinasPira.cshtml" />
+    <Content Include="Areas\Painel\Views\Home\Contato.cshtml" />
+    <Content Include="Areas\Painel\Views\Home\QuemSomos.cshtml" />
     <Content Include="Areas\Painel\Views\Home\Index.cshtml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="img\1.jpg" />

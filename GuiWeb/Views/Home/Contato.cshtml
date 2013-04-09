@@ -1,5 +1,68 @@
-﻿@{
+﻿@model Dominio.Contato
+@{
     ViewBag.Title = "Contato";
 }
 
-<h2>Contato</h2>
+<section id="contato">
+    <header class="cab-destaque">
+        <img src="~/Content/img/img-coberturas.jpg" title="Contato" alt="Contato">
+        <h2>@Html.ActionLink("Contato", "Contato", "Home")</h2>
+    </header>
+    <section id="form-contato">
+        <header id="cab-contato">
+            <h3>Preencha o formulário para nos mandar um email</h3>
+        </header>
+        @using (Html.BeginForm(new { @id = "contato-email" }))
+        {
+            @Html.ValidationSummary(true)
+            <ol>
+                <li>
+                    @Html.LabelFor(model => model.ContatoNome)<br />
+                    @Html.EditorFor(model => model.ContatoNome)
+                    <div style="width: 100%">
+                        @Html.ValidationMessageFor(model => model.ContatoNome)
+                    </div>
+                </li>
+                <li>
+                    @Html.LabelFor(model => model.ContatoEmail)<br />
+                    @Html.EditorFor(model => model.ContatoEmail)
+                    <div style="width: 100%">
+                        @Html.ValidationMessageFor(model => model.ContatoEmail)
+                    </div>
+                </li>
+                <li>
+                    @Html.LabelFor(model => model.ContatoTelefone)<br />
+                    @Html.EditorFor(model => model.ContatoTelefone)
+                    <div style="width: 100%">
+                        @Html.ValidationMessageFor(model => model.ContatoTelefone)
+                    </div>
+                </li>
+                <li>
+                    @Html.LabelFor(model => model.ContatoCidade)<br />
+                    @Html.EditorFor(model => model.ContatoCidade)
+                    <div style="width: 100%">
+                        @Html.ValidationMessageFor(model => model.ContatoCidade)
+                    </div>
+                </li>
+                <li>
+                    @Html.LabelFor(model => model.ContatoAssunto)<br />
+                    @Html.EditorFor(model => model.ContatoAssunto)
+                    <div style="width: 100%">
+                        @Html.ValidationMessageFor(model => model.ContatoAssunto)
+                    </div>
+                </li>
+                <li>
+                    @Html.LabelFor(model => model.ContatoMensagem)<br />
+                    @Html.TextAreaFor(model => model.ContatoMensagem)
+                    <div style="width: 100%">
+                        @Html.ValidationMessageFor(model => model.ContatoMensagem)
+                    </div>
+                </li>
+                <li>
+                    <input type="submit" class="btn btn-primary btn-inverse" value="Acessar" />
+                    <input type="reset" class="btn btn-primary btn-inverse" value="Limpar" />
+                </li>
+            </ol>
+        }
+    </section>
+</section>
