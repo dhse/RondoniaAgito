@@ -92,10 +92,14 @@
   <Module PersistentId="Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ModuleId="Microsoft.VisualBasic" />
   <Module PersistentId="System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ModuleId="System.Management" />
   <Module PersistentId="Microsoft.JScript, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ModuleId="Microsoft.JScript" />
+  <Module PersistentId="Aplicacao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ModuleId="Aplicacao_2" />
   <Module PersistentId="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="mscorlib_1" />
   <Module PersistentId="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="mscorlib_2" />
+  <Module PersistentId="Dominio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ModuleId="Dominio_2" />
   <Module PersistentId="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Data_1" />
   <Module PersistentId="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Data_2" />
+  <Module PersistentId="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Core_1" />
+  <Module PersistentId="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Core_2" />
   <Module PersistentId="System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" ModuleId="System.ComponentModel.DataAnnotations_1" />
   <Module PersistentId="System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" ModuleId="System.ComponentModel.DataAnnotations_2" />
   <Module PersistentId="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System_1" />
@@ -110,12 +114,10 @@
   <Module PersistentId="System.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Numerics_2" />
   <Module PersistentId="System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ModuleId="System.EnterpriseServices_1" />
   <Module PersistentId="System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ModuleId="System.EnterpriseServices_2" />
-  <Module PersistentId="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Core_1" />
-  <Module PersistentId="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Core_2" />
-  <Module PersistentId="System.Data.SqlXml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Data.SqlXml_1" />
-  <Module PersistentId="System.Data.SqlXml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Data.SqlXml_2" />
   <Module PersistentId="System.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ModuleId="System.Security_1" />
   <Module PersistentId="System.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ModuleId="System.Security_2" />
+  <Module PersistentId="System.Data.SqlXml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Data.SqlXml_1" />
+  <Module PersistentId="System.Data.SqlXml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Data.SqlXml_2" />
   <Module PersistentId="System.DirectoryServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ModuleId="System.DirectoryServices_1" />
   <Module PersistentId="System.DirectoryServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ModuleId="System.DirectoryServices_2" />
   <Module PersistentId="System.Runtime.Remoting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Runtime.Remoting_1" />

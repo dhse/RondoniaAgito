@@ -6,63 +6,55 @@
 <section id="contato">
     <header class="cab-destaque">
         <img src="~/Content/img/img-coberturas.jpg" title="Contato" alt="Contato">
-        <h2>@Html.ActionLink("Contato", "Contato", "Home")</h2>
+        <h2><a href="#" title="Contato">Contato</a></h2>
     </header>
     <section id="form-contato">
         <header id="cab-contato">
-            <h3>Preencha o formulário para nos mandar um email</h3>
+            <h3>Preencha o formulário para nos mandar um email
+            </h3>
         </header>
-        @using (Html.BeginForm(new { @id = "contato-email" }))
+        @using (@Html.BeginForm(new { @id = "contato-email" }))
         {
             @Html.ValidationSummary(true)
-            <ol>
-                <li>
-                    @Html.LabelFor(model => model.ContatoNome)<br />
-                    @Html.EditorFor(model => model.ContatoNome)
-                    <div style="width: 100%">
+            <fieldset style="border: 0">
+                <legend></legend>
+                <ol>
+                    <li>
+                        @Html.LabelFor(model => model.ContatoNome)
+                        @Html.EditorFor(model => model.ContatoNome)
                         @Html.ValidationMessageFor(model => model.ContatoNome)
-                    </div>
-                </li>
-                <li>
-                    @Html.LabelFor(model => model.ContatoEmail)<br />
-                    @Html.EditorFor(model => model.ContatoEmail)
-                    <div style="width: 100%">
+                    </li>
+                    <li>
+                        @Html.LabelFor(model => model.ContatoEmail)
+                        @Html.EditorFor(model => model.ContatoEmail)
                         @Html.ValidationMessageFor(model => model.ContatoEmail)
-                    </div>
-                </li>
-                <li>
-                    @Html.LabelFor(model => model.ContatoTelefone)<br />
-                    @Html.EditorFor(model => model.ContatoTelefone)
-                    <div style="width: 100%">
+                    </li>
+                    <li>
+                        @Html.LabelFor(model => model.ContatoTelefone)
+                        @Html.EditorFor(model => model.ContatoTelefone)
                         @Html.ValidationMessageFor(model => model.ContatoTelefone)
-                    </div>
-                </li>
-                <li>
-                    @Html.LabelFor(model => model.ContatoCidade)<br />
-                    @Html.EditorFor(model => model.ContatoCidade)
-                    <div style="width: 100%">
+                    </li>
+                    <li>
+                        @Html.LabelFor(model => model.ContatoCidade)
+                        @Html.EditorFor(model => model.ContatoCidade)
                         @Html.ValidationMessageFor(model => model.ContatoCidade)
-                    </div>
-                </li>
-                <li>
-                    @Html.LabelFor(model => model.ContatoAssunto)<br />
-                    @Html.EditorFor(model => model.ContatoAssunto)
-                    <div style="width: 100%">
+                    </li>
+                    <li>
+                        @Html.LabelFor(model => model.ContatoAssunto)
+                        @Html.EditorFor(model => model.ContatoAssunto)
                         @Html.ValidationMessageFor(model => model.ContatoAssunto)
-                    </div>
-                </li>
-                <li>
-                    @Html.LabelFor(model => model.ContatoMensagem)<br />
-                    @Html.TextAreaFor(model => model.ContatoMensagem)
-                    <div style="width: 100%">
+                    </li>
+                    <li>
+                        @Html.LabelFor(model => model.ContatoMensagem)
+                        @Html.TextAreaFor(model => model.ContatoMensagem)
                         @Html.ValidationMessageFor(model => model.ContatoMensagem)
-                    </div>
-                </li>
-                <li>
-                    <input type="submit" class="btn btn-primary btn-inverse" value="Acessar" />
-                    <input type="reset" class="btn btn-primary btn-inverse" value="Limpar" />
-                </li>
-            </ol>
+                    </li>
+                    <li>
+                        <button type="submit" id="bt-enviar"></button>
+                        <button type="reset" id="bt-limpar"></button>
+                    </li>
+                </ol>
+            </fieldset>
         }
     </section>
 </section>

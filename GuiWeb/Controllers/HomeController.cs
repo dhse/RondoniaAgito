@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Aplicacao;
+using Dominio;
 
 namespace GuiWeb.Controllers
 {
@@ -31,8 +33,21 @@ namespace GuiWeb.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult Contato(Contato contato)
+        {
+            if (ModelState.IsValid)
+            {
+                var contatoAplicacao = new ContatoAplicacao();
+                contatoAplicacao.Salvar(contato);
+            }
+            return RedirectToAction("Index", "Home");
+        }
+
         public ActionResult QuemSomos()
         {
+            var quemSomosAplicacao = new QuemSomosAplicacao();
+            ViewBag.Descricao = quemSomosAplicacao.ListarTodos();
             return View();
         }
 

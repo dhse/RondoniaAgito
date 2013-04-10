@@ -24,14 +24,14 @@ namespace Aplicacao
         private void Alterar(Admin admin)
         {
             var strQuery = "";
-            strQuery = string.Format("UPDATE ADMIN SET ");
+            strQuery = string.Format("UPDATE ADMIN SET AdminLogin = '{0}', AdminSenha = '{1}', AdminNome = '{2}', AdminEmail = '{3}', AdminFoto = '{4}'",admin.AdminLogin,admin.AdminSenha,admin.AdminNome,admin.AdminEmail,admin.AdminFoto);
             contexto.ExecutaComandoInserirtAlterarDeletetar(strQuery);
         }
 
         private void Inserir(Admin admin)
         {
             var strQuery = "";
-            strQuery = String.Format("INSERT INTO ADMIN () VALUES()");
+            strQuery = String.Format("INSERT INTO ADMIN(AdminLogin,AdminSenha,AdminNome,AdminEmail,AdminFoto) VALUES('{0}','{1}','{2}','{3}','{4}')",admin.AdminLogin,admin.AdminSenha,admin.AdminNome,admin.AdminEmail,admin.AdminFoto);
 
             contexto.ExecutaComandoInserirtAlterarDeletetar(strQuery);
         }
@@ -47,6 +47,13 @@ namespace Aplicacao
             var strQuery = " SELECT *FROM ADMIN";
             var retorno = contexto.ExecutaComandoRetorno(strQuery);
             return TransformaReaderEmListaDeObjeto(retorno);
+        }
+
+        public Admin ListarPorId(int id)
+        {
+            var strQuery = " SELECT * FROM ADMIN WHERE AdminId = " + id;
+            var retorno = contexto.ExecutaComandoRetorno(strQuery);
+            return TransformaReaderEmListaDeObjeto(retorno).FirstOrDefault();
         }
 
         private List<Admin> TransformaReaderEmListaDeObjeto(SqlDataReader reader)

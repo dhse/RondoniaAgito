@@ -620,13 +620,13 @@ ul, ol {
                 width: 340px;
             }
 
-                #contato-email ol li label {
+                label {
                     font: normal 14px Arial, Helvetica, sans-serif;
                     color: #000;
                     margin: 10px 0 0 20px;
                 }
 
-#nome, #email, #telefone, #cidade, #assunto {
+#ContatoNome, #ContatoEmail, #ContatoTelefone, #ContatoCidade, #ContatoAssunto {
     width: 340px;
     height: 30px;
     margin: 10px 0 5px 20px;
@@ -634,11 +634,11 @@ ul, ol {
     border-radius: 10px;
 }
 
-    #nome:focus, #email:focus, #telefone:focus, #cidade:focus, #assunto:focus, #mensagem:focus {
+    #ContatoNome:focus, #ContatoEmail:focus, #ContatoTelefone:focus, #ContatoCidade:focus, #ContatoAssunto:focus, #ContatoMensagem:focus {
         background: #FFFF00;
     }
 
-#mensagem {
+#ContatoMensagem {
     width: 340px;
     height: 100px;
     margin: 10px 0 5px 20px;

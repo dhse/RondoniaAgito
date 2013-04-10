@@ -1,0 +1,54 @@
+﻿@model Dominio.Admin
+
+@{
+    ViewBag.Title = "Excluir";
+    Layout = "~/Areas/Painel/Views/Shared/_Painel.cshtml";
+}
+
+<h2 style="margin-top: 100px">Excluir</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Admin</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AdminLogin)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AdminLogin)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AdminSenha)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AdminSenha)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AdminNome)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AdminNome)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AdminEmail)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AdminEmail)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AdminFoto)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AdminFoto)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Excluir" /> |
+        @Html.ActionLink("Retornar", "Index")
+    </p>
+}

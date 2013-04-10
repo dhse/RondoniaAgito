@@ -122,6 +122,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Painel\Controllers\AdminController.cs" />
     <Compile Include="Areas\Painel\Controllers\HomeController.cs" />
     <Compile Include="Areas\Painel\PainelAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -221,13 +222,13 @@
     <Content Include="Content\Site.css" />
     <Content Include="Areas\Painel\Views\Web.config" />
     <Content Include="Areas\Painel\Views\Shared\_Painel.cshtml" />
-    <Content Include="Areas\Painel\Views\Home\Logado.cshtml" />
-    <Content Include="Areas\Painel\Views\Home\Admin.cshtml" />
-    <Content Include="Areas\Painel\Views\Home\Eventos.cshtml" />
-    <Content Include="Areas\Painel\Views\Home\AsMinasPira.cshtml" />
-    <Content Include="Areas\Painel\Views\Home\Contato.cshtml" />
-    <Content Include="Areas\Painel\Views\Home\QuemSomos.cshtml" />
     <Content Include="Areas\Painel\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Painel\Views\Admin\Index.cshtml" />
+    <Content Include="Areas\Painel\Views\Admin\Detalhes.cshtml" />
+    <Content Include="Areas\Painel\Views\Admin\Cadastrar.cshtml" />
+    <Content Include="Areas\Painel\Views\Admin\Editar.cshtml" />
+    <Content Include="Areas\Painel\Views\Admin\Excluir.cshtml" />
+    <Content Include="Areas\Painel\Views\Home\BemVindo.cshtml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="img\1.jpg" />
     <Content Include="img\2.jpg" />

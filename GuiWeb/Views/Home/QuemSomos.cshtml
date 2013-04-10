@@ -1,5 +1,16 @@
 ﻿@{
     ViewBag.Title = "QuemSomos";
 }
+<div style="margin : 140px 0 0 30px">
+    <h2>QuemSomos</h2>
+    <div>
+        <div>
+           @foreach(var item in ViewBag.QuemSomos)
+           {
+               
+                <p>item.ToString();</p>
+           }
+        </div>
+    </div>
+</div>
 
-<h2>QuemSomos</h2>

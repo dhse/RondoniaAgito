@@ -24,27 +24,27 @@ namespace Aplicacao
         private void Alterar(QuemSomos quemSomos)
         {
             var strQuery = "";
-            strQuery = string.Format("UPDATE QUEMSOMOS SET ");
+            strQuery = string.Format("UPDATE QUEMSOMOS SET QuemSomoDescricao = '{0}'",quemSomos.QuemSomosDescricao);
             contexto.ExecutaComandoInserirtAlterarDeletetar(strQuery);
         }
 
         private void Inserir(QuemSomos quemSomos)
         {
             var strQuery = "";
-            strQuery = String.Format("INSERT INTO ADMIN () VALUES()");
+            strQuery = String.Format("INSERT INTO QuemSomos(QuemSomosDescricao) VALUES('{0}')",quemSomos.QuemSomosDescricao);
 
             contexto.ExecutaComandoInserirtAlterarDeletetar(strQuery);
         }
 
         public void Excluir(int id)
         {
-            var strQuery = string.Format(" DELETE FROM QUEMSOMOS WHERE QUEMSOMOSID = {0}", id);
+            var strQuery = string.Format(" DELETE FROM QuemSomos WHERE QuemSomosId = {0}", id);
             contexto.ExecutaComandoInserirtAlterarDeletetar(strQuery);
         }
 
         public List<QuemSomos> ListarTodos()
         {
-            var strQuery = " SELECT *FROM QUEEMSOMOS";
+            var strQuery = " SELECT *FROM QuemSomos";
             var retorno = contexto.ExecutaComandoRetorno(strQuery);
             return TransformaReaderEmListaDeObjeto(retorno);
         }

@@ -22,8 +22,8 @@ namespace GuiWeb.Areas.Painel.Controllers
             if (ModelState.IsValid)
             {
                 //Se for valido
-                var adminaplicacao = new AdminAplicacao();
-                if (adminaplicacao.Logar(admin))
+                var adminAplicacao = new AdminAplicacao();
+                if (adminAplicacao.Logar(admin))
                 {
                     //Verificando se o usuario tem permissão pra acessa essa pagina
                     FormsAuthentication.SetAuthCookie(admin.AdminLogin, false);
@@ -36,54 +36,24 @@ namespace GuiWeb.Areas.Painel.Controllers
                         return Redirect(returnUrl);
                     }
                     //Redirecionando o usuario pra tela inicial do sistema
-                    return RedirectToAction("Logado", "Home", new { Area = "Painel" });
+                    return RedirectToAction("BemVindo", "Home", new { Area = "Painel" });
                 }
                 ViewBag.Menssage = "Usuário ou senha não confere";
             }
             //Se não for valido
 
-            return View();
+            return RedirectToAction("Index");
         }
 
         [Authorize]
         public ActionResult Logout()
         {
             FormsAuthentication.SignOut();
-            return RedirectToAction("Index", "Home", new { Area = "" });
+            return RedirectToAction("Index");
         }
 
         [Authorize]
-        public  ActionResult Logado()
-        {
-            return View();
-        }
-
-        [Authorize]
-        public ActionResult Admin()
-        {
-            return View();
-        }
-
-        [Authorize]
-        public ActionResult Eventos()
-        {
-            return View();
-        }
-
-        [Authorize]
-        public ActionResult AsMinasPira()
-        {
-            return View();
-        }
-
-        [Authorize]
-        public ActionResult Contato()
-        {
-            return View();
-        }
-
-        [Authorize]
-        public ActionResult QuemSomos()
+        public ActionResult BemVindo()
         {
             return View();
         }

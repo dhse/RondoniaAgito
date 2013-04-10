@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@model Dominio.Admin
+@using Dominio
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -14,11 +16,14 @@
             <div class="container">
                 <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 </button>
-                @Html.ActionLink("Painel", "Logado", "Home", new { @class = "brand" })
+                <a class="brand" href="#">Painel</a>
                 <div class="nav-collapse collapse">
                     <ul class="nav">
                         <li class="active">
-                            @Html.ActionLink("Admin", "Admin", "Home")
+                           @Html.ActionLink("Home","BemVindo","Home")     
+                        </li>
+                        <li class="">
+                            @Html.ActionLink("Admin", "Index", "Admin")
                         </li>
                         <li class="">
                             @Html.ActionLink("Eventos", "Eventos", "Home")
