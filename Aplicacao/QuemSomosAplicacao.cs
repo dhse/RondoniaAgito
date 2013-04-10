@@ -49,6 +49,13 @@ namespace Aplicacao
             return TransformaReaderEmListaDeObjeto(retorno);
         }
 
+        public QuemSomos ListarPorId(int id)
+        {
+            var strQuery = " SELECT * FROM QuemSomos WHERE QuemSomosId = " + id;
+            var retorno = contexto.ExecutaComandoRetorno(strQuery);
+            return TransformaReaderEmListaDeObjeto(retorno).FirstOrDefault();
+        }
+
         private List<QuemSomos> TransformaReaderEmListaDeObjeto(SqlDataReader reader)
         {
             var quemSomos = new List<QuemSomos>();

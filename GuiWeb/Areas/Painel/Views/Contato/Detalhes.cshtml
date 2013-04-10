@@ -1,0 +1,58 @@
+﻿@model Dominio.Contato
+
+@{
+    ViewBag.Title = "Detalhes";
+    Layout = "~/Areas/Painel/Views/Shared/_Painel.cshtml";
+}
+
+<h2>Detalhes</h2>
+
+<fieldset>
+    <legend>Contato</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ContatoNome)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ContatoNome)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ContatoEmail)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ContatoEmail)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ContatoTelefone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ContatoTelefone)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ContatoCidade)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ContatoCidade)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ContatoAssunto)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ContatoAssunto)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ContatoMensagem)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ContatoMensagem)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Editar", "Editar", new { id=Model.ContatoId }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

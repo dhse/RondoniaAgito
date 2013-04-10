@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Dominio.QuemSomos>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Painel/Views/Shared/_Painel.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Cadastrar Novo", "Cadastrar")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.QuemSomosDescricao)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.QuemSomosDescricao)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id=item.QuemSomosId }) |
+            @Html.ActionLink("Detailhes", "Detalhes", new { id=item.QuemSomosId }) |
+            @Html.ActionLink("Excluir", "Excluir", new { id=item.QuemSomosId })
+        </td>
+    </tr>
+}
+
+</table>

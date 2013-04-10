@@ -1,0 +1,23 @@
+﻿@model Dominio.QuemSomos
+
+@{
+    ViewBag.Title = "Detalhes";
+    Layout = "~/Areas/Painel/Views/Shared/_Painel.cshtml";
+}
+
+<h2>Detalhes</h2>
+
+<fieldset>
+    <legend>QuemSomos</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.QuemSomosDescricao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.QuemSomosDescricao)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Editar", "Editar", new { id=Model.QuemSomosId }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

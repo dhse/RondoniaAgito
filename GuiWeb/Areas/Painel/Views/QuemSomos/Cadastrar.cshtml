@@ -1,0 +1,36 @@
+﻿@model Dominio.QuemSomos
+
+@{
+    ViewBag.Title = "Cadastrar";
+    Layout = "~/Areas/Painel/Views/Shared/_Painel.cshtml";
+}
+
+<h2>Cadastrar</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>QuemSomos</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.QuemSomosDescricao)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.QuemSomosDescricao)
+            @Html.ValidationMessageFor(model => model.QuemSomosDescricao)
+        </div>
+
+        <p>
+            <input type="submit" value="Cadastrar" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Voltar", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -5,9 +5,9 @@
     Layout = "~/Areas/Painel/Views/Shared/_Painel.cshtml";
 }
 
-<h2 style="margin-top: 100px">Excluir</h2>
+<h2>Excluir</h2>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Tem certeza que deseja deletar este registro?</h3>
 <fieldset>
     <legend>Admin</legend>
 
@@ -49,6 +49,6 @@
 @using (Html.BeginForm()) {
     <p>
         <input type="submit" value="Excluir" /> |
-        @Html.ActionLink("Retornar", "Index")
+        @Html.ActionLink("Voltar", "Index")
     </p>
 }

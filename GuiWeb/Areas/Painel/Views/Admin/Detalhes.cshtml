@@ -5,7 +5,7 @@
     Layout = "~/Areas/Painel/Views/Shared/_Painel.cshtml";
 }
 
-<h2 style="margin-top: 100px">Detalhes</h2>
+<h2>Detalhes</h2>
 
 <fieldset>
     <legend>Admin</legend>
@@ -47,5 +47,5 @@
 </fieldset>
 <p>
     @Html.ActionLink("Editar", "Editar", new { id=Model.AdminId }) |
-    @Html.ActionLink("Retornar", "Index")
+    @Html.ActionLink("Voltar", "Index")
 </p>

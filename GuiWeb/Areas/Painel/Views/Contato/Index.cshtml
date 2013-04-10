@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Dominio.Contato>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Painel/Views/Shared/_Painel.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Cadastrar Novo", "Cadastrar")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ContatoNome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContatoEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContatoTelefone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContatoCidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContatoAssunto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContatoMensagem)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContatoNome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContatoEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContatoTelefone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContatoCidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContatoAssunto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContatoMensagem)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id=item.ContatoId }) |
+            @Html.ActionLink("Detailhes", "Detalhes", new { id=item.ContatoId }) |
+            @Html.ActionLink("Excluir", "Excluir", new { id=item.ContatoId })
+        </td>
+    </tr>
+}
+
+</table>

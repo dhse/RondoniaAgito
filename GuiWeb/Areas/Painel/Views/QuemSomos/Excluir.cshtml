@@ -1,0 +1,26 @@
+﻿@model Dominio.QuemSomos
+
+@{
+    ViewBag.Title = "Excluir";
+    Layout = "~/Areas/Painel/Views/Shared/_Painel.cshtml";
+}
+
+<h2>Excluir</h2>
+
+<h3>Tem certeza que deseja apaga este registro?</h3>
+<fieldset>
+    <legend>QuemSomos</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.QuemSomosDescricao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.QuemSomosDescricao)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Voltar", "Index")
+    </p>
+}

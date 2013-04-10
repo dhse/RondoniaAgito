@@ -47,7 +47,11 @@ namespace GuiWeb.Controllers
         public ActionResult QuemSomos()
         {
             var quemSomosAplicacao = new QuemSomosAplicacao();
-            ViewBag.Descricao = quemSomosAplicacao.ListarTodos();
+            var lista = quemSomosAplicacao.ListarTodos();
+            foreach (var quemSomos in lista)
+            {
+                ViewBag.quemSomos = quemSomos.QuemSomosDescricao;
+            }
             return View();
         }
 

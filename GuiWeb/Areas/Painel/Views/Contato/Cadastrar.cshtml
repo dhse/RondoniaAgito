@@ -1,0 +1,76 @@
+﻿@model Dominio.Contato
+
+@{
+    ViewBag.Title = "Cadastrar";
+    Layout = "~/Areas/Painel/Views/Shared/_Painel.cshtml";
+}
+
+<h2>Cadastrar</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Contato</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ContatoNome)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ContatoNome)
+            @Html.ValidationMessageFor(model => model.ContatoNome)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ContatoEmail)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ContatoEmail)
+            @Html.ValidationMessageFor(model => model.ContatoEmail)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ContatoTelefone)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ContatoTelefone)
+            @Html.ValidationMessageFor(model => model.ContatoTelefone)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ContatoCidade)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ContatoCidade)
+            @Html.ValidationMessageFor(model => model.ContatoCidade)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ContatoAssunto)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ContatoAssunto)
+            @Html.ValidationMessageFor(model => model.ContatoAssunto)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ContatoMensagem)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ContatoMensagem)
+            @Html.ValidationMessageFor(model => model.ContatoMensagem)
+        </div>
+
+        <p>
+            <input type="submit" value="Cadastrar" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Voltar", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
