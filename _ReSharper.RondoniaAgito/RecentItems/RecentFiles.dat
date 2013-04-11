@@ -14,14 +14,15 @@
     <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Views/d:Home/f:Index.cshtml" caret="0" fromTop="0" />
     <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Views/d:Home/f:Contato.cshtml" caret="1258" fromTop="22" />
     <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Views/d:Shared/f:_Layout.cshtml" caret="0" fromTop="0" />
-    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Views/d:Shared/f:_Painel.cshtml" caret="0" fromTop="0" />
     <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Controllers/f:AdministradorController.cs" caret="208" fromTop="10" />
     <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Controllers/f:ContatoController.cs" caret="119" fromTop="6" />
     <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Controllers/f:QuemSomosController.cs" caret="121" fromTop="7" />
-    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Views/d:Administrador/f:Cadastrar.cshtml" caret="289" fromTop="15" />
-    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Views/d:Administrador/f:Detalhes.cshtml" caret="0" fromTop="0" />
     <File id="BD5219C4-A22A-423F-B4FC-D9D4149C9ADE/f:AdministradorAplicacao.cs" caret="2904" fromTop="18" />
+    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Views/d:Administrador/f:Detalhes.cshtml" caret="0" fromTop="0" />
+    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Views/d:Administrador/f:Cadastrar.cshtml" caret="289" fromTop="15" />
+    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Views/d:Shared/f:_Painel.cshtml" caret="0" fromTop="0" />
     <File id="70F27605-3852-4CBF-A1A2-80F31AE45138/f:Contexto.cs" caret="1308" fromTop="30" />
+    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Views/d:QuemSomos/f:Cadastrar.cshtml" caret="454" fromTop="19" />
   </RecentFiles>
   <RecentEdits>
     <File id="EDBC3A00-0DF8-489E-9D2D-F1111CEC6FB1/f:Contato.cs" caret="1220" fromTop="21" />
@@ -38,5 +39,6 @@
     <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Views/d:Administrador/f:Cadastrar.cshtml" caret="289" fromTop="15" />
     <File id="BD5219C4-A22A-423F-B4FC-D9D4149C9ADE/f:AdministradorAplicacao.cs" caret="2814" fromTop="16" />
     <File id="70F27605-3852-4CBF-A1A2-80F31AE45138/f:Contexto.cs" caret="626" fromTop="15" />
+    <File id="CB085697-296D-4891-A224-CF40DA535D2F/d:Areas/d:Painel/d:Views/d:QuemSomos/f:Cadastrar.cshtml" caret="454" fromTop="19" />
   </RecentEdits>
 </RecentFiles>

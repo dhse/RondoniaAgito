@@ -95,6 +95,7 @@
   <Module PersistentId="Aplicacao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ModuleId="Aplicacao_2" />
   <Module PersistentId="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="mscorlib_1" />
   <Module PersistentId="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="mscorlib_2" />
+  <Module PersistentId="Repositorio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ModuleId="Repositorio_2" />
   <Module PersistentId="Dominio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ModuleId="Dominio_2" />
   <Module PersistentId="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Data_1" />
   <Module PersistentId="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Data_2" />
