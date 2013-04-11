@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Dominio;
 using Repositorio;
 
+
 namespace Aplicacao
 {
     public class AdminAplicacao
