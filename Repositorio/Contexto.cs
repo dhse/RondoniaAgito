@@ -13,7 +13,8 @@ namespace Repositorio
         //Connection String e ja faz uma conecção com o banco de dados
         public SqlConnection ConectarNoBanco()
         {
-            var coneccao = new SqlConnection(@"server=localhost;Integrated Security=SSPI;Initial Catalog=RondoniaAgito");
+            var coneccao = new SqlConnection(@"Server=adb6612a-8f48-49d5-9bfc-a19c0020b8ce.sqlserver.sequelizer.com;Database=dbadb6612a8f4849d59bfca19c0020b8ce;User ID=kcrjfbbtwgrvsvnt;Password=rcGKd23SuBC7FbjYzD2NCbPLtzbGQApLY5pU3oPFm6bSHenZeYzn6Zqpu4qLYuc2;");
+            //var coneccao = new SqlConnection(@"server=localhost;Integrated Security=SSPI;Initial Catalog=RondoniaAgito");
             coneccao.Open();
             return coneccao;
         }

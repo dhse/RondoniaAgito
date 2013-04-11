@@ -1,0 +1,76 @@
+﻿@model Dominio.Administrador
+
+@{
+    ViewBag.Title = "Editar";
+    Layout = "~/Areas/Painel/Views/Shared/_Painel.cshtml";
+}
+
+<h2>Editar</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Administrador</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AdminId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AdminId)
+            @Html.ValidationMessageFor(model => model.AdminId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AdminLogin)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AdminLogin)
+            @Html.ValidationMessageFor(model => model.AdminLogin)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AdminSenha)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AdminSenha)
+            @Html.ValidationMessageFor(model => model.AdminSenha)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AdminNome)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AdminNome)
+            @Html.ValidationMessageFor(model => model.AdminNome)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AdminEmail)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AdminEmail)
+            @Html.ValidationMessageFor(model => model.AdminEmail)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AdminFoto)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AdminFoto)
+            @Html.ValidationMessageFor(model => model.AdminFoto)
+        </div>
+
+        <p>
+            <input type="submit" value="Salvar" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Voltar", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

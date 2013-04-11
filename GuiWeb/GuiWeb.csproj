@@ -122,7 +122,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Areas\Painel\Controllers\AdminController.cs" />
+    <Compile Include="Areas\Painel\Controllers\AdministradorController.cs" />
     <Compile Include="Areas\Painel\Controllers\ContatoController.cs" />
     <Compile Include="Areas\Painel\Controllers\HomeController.cs" />
     <Compile Include="Areas\Painel\Controllers\QuemSomosController.cs" />
@@ -225,12 +225,7 @@
     <Content Include="Areas\Painel\Views\Web.config" />
     <Content Include="Areas\Painel\Views\Shared\_Painel.cshtml" />
     <Content Include="Areas\Painel\Views\Home\Index.cshtml" />
-    <Content Include="Areas\Painel\Views\Admin\Cadastrar.cshtml" />
     <Content Include="Areas\Painel\Views\Home\BemVindo.cshtml" />
-    <Content Include="Areas\Painel\Views\Admin\Index.cshtml" />
-    <Content Include="Areas\Painel\Views\Admin\Detalhes.cshtml" />
-    <Content Include="Areas\Painel\Views\Admin\Editar.cshtml" />
-    <Content Include="Areas\Painel\Views\Admin\Excluir.cshtml" />
     <Content Include="Areas\Painel\Views\QuemSomos\Index.cshtml" />
     <Content Include="Areas\Painel\Views\QuemSomos\Detalhes.cshtml" />
     <Content Include="Areas\Painel\Views\QuemSomos\Cadastrar.cshtml" />
@@ -241,6 +236,11 @@
     <Content Include="Areas\Painel\Views\Contato\Cadastrar.cshtml" />
     <Content Include="Areas\Painel\Views\Contato\Editar.cshtml" />
     <Content Include="Areas\Painel\Views\Contato\Excluir.cshtml" />
+    <Content Include="Areas\Painel\Views\Administrador\Index.cshtml" />
+    <Content Include="Areas\Painel\Views\Administrador\Cadastrar.cshtml" />
+    <Content Include="Areas\Painel\Views\Administrador\Detalhes.cshtml" />
+    <Content Include="Areas\Painel\Views\Administrador\Editar.cshtml" />
+    <Content Include="Areas\Painel\Views\Administrador\Excluir.cshtml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="img\1.jpg" />
     <Content Include="img\2.jpg" />

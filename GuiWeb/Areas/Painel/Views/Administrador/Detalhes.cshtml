@@ -1,0 +1,58 @@
+﻿@model Dominio.Administrador
+
+@{
+    ViewBag.Title = "Detalhes";
+    Layout = "~/Areas/Painel/Views/Shared/_Painel.cshtml";
+}
+
+<h2>Detalhes</h2>
+
+<fieldset>
+    <legend>Administrador</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AdminId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AdminId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AdminLogin)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AdminLogin)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AdminSenha)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AdminSenha)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AdminNome)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AdminNome)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AdminEmail)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AdminEmail)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AdminFoto)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AdminFoto)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Editar", "Editar", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

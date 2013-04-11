@@ -1,4 +1,0 @@
-RondoniaAgito
-=============
-
-Site de Noticias

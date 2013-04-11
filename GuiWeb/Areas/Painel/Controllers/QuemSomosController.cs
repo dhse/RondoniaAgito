@@ -5,6 +5,7 @@ using Dominio;
 
 namespace GuiWeb.Areas.Painel.Controllers
 {
+    [Authorize]
     public class QuemSomosController : Controller
     {
         //

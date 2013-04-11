@@ -16,13 +16,13 @@ namespace GuiWeb.Areas.Painel.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(Admin admin, string returnUrl = "")
+        public ActionResult Index(Administrador admin, string returnUrl = "")
         {
             //Validando
             if (ModelState.IsValid)
             {
                 //Se for valido
-                var adminAplicacao = new AdminAplicacao();
+                var adminAplicacao = new AdministradorAplicacao();
                 if (adminAplicacao.Logar(admin))
                 {
                     //Verificando se o usuario tem permissão pra acessa essa pagina

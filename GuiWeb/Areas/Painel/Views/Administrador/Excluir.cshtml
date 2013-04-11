@@ -1,0 +1,61 @@
+﻿@model Dominio.Administrador
+
+@{
+    ViewBag.Title = "Excluir";
+    Layout = "~/Areas/Painel/Views/Shared/_Painel.cshtml";
+}
+
+<h2>Excluir</h2>
+
+<h3>Tem certeza que deseja deletar este registro?</h3>
+<fieldset>
+    <legend>Administrador</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AdminId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AdminId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AdminLogin)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AdminLogin)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AdminSenha)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AdminSenha)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AdminNome)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AdminNome)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AdminEmail)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AdminEmail)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AdminFoto)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AdminFoto)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Excluir" /> |
+        @Html.ActionLink("Voltar", "Index")
+    </p>
+}
